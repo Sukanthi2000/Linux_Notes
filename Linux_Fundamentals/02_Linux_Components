@@ -1,0 +1,91 @@
+# ⚙️ Core Components of a Linux Machine
+
+Understanding how Linux works from the ground up helps you become better at troubleshooting, automation, and system design.  
+Here’s a simple breakdown of how the different layers of a Linux machine interact:
+
+ (a) Hardware Layer :
+ --------------------
+
+This is the foundation of every Linux system. It includes all **physical components** such as the CPU, RAM, storage devices, and network interfaces.  
+
+- The operating system communicates with these devices using **device drivers**.  
+- Drivers translate OS-level instructions into hardware-specific signals.  
+- Without drivers, the kernel can’t interact with the hardware.  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ (b) Kernel – The Core of Linux  
+---------------------------------
+
+The **Linux kernel** is the brain of the operating system. It’s responsible for managing all critical system resources and acts as a bridge between software and hardware.  
+
+  Main Functions:
+1. Process Management – Creates, schedules, and terminates processes.  
+2. Memory Management – Efficiently allocates and frees RAM.  
+3. Device Drivers – Enable hardware communication.  
+4. File System Management – Controls data storage and retrieval through formats like `ext4`, `xfs`, and `btrfs`.  
+5. Network Management – Handles data transfer, routing, and network interfaces.  
+
+Note: Linux uses a monolithic kernel, meaning most services (file systems, drivers, etc.) run directly inside the kernel space for speed and performance.  
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ (c) Shell – The Command Interface  
+----------------------------------
+
+The shell is a command-line interface that allows users to communicate with the kernel.  
+It interprets human-readable commands and translates them into actions the OS can execute.  
+
+  Common Shells:
+- Bash (Bourne Again Shell) – Default on most Linux systems.  
+- Zsh – Highly customizable with themes and plugins.  
+- Fish – User-friendly with built-in suggestions.  
+- Ksh / Dash – Lightweight shells for scripting.  
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(d) System Libraries and Utilities
+-----------------------------------
+ 
+1) System Libraries
+
+Provide the link between applications and kernel features.
+They offer reusable functions for developers to access OS features without direct kernel calls.
+Examples: glibc, libc, OpenSSL.
+
+2) System Utilities
+
+These are command-line tools used to manage and interact with the system.
+Examples include:
+
+ls – List directory contents
+
+grep – Search for text
+
+systemctl – Manage services and system states
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(e) User Applications
+---------------------
+
+Applications run in user space and rely on the OS to handle hardware-level operations securely.
+
+Examples:
+
+Editors: Vim, VS Code
+
+Servers: Apache, Nginx
+
+DevOps Tools: Docker, Jenkins
+
+Browsers & Utilities: Firefox, LibreOffice
+
+Applications interact with the OS through:
+
+System calls via the shell
+
+Libraries and APIs
+
+Graphical User Interfaces (GUI)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
