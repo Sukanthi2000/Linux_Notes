@@ -1,9 +1,14 @@
-Linux follows a hierarchical file system structure, meaning everything starts from a single root directory / and branches out into subdirectories.
-This design ensures organization, stability, and a predictable environment for both users and applications.
+# 🐧 Linux Folder Structure
 
-🌳 The Linux Directory Tree
+**Linux** follows a *hierarchical file system structure*, meaning everything starts from a **single root directory `/`** and branches out into subdirectories.  
+This design ensures **organization**, **stability**, and a **predictable environment** for both users and applications.
+
+---
+
+## 🌳 The Linux Directory Tree
 
 Here’s how Linux organizes its system files:
+
 
 /
 ├── bin       → Essential user commands (e.g., ls, cp, mv)
