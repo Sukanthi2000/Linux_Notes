@@ -9,28 +9,26 @@ This design ensures **organization**, **stability**, and a **predictable environ
 
 Here’s how Linux organizes its system files:
 
+```bash
 /
-├── bin → Essential user commands (e.g., ls, cp, mv)
-├── boot → Files needed to boot the OS (kernel, GRUB)
-├── dev → Device files (representing hardware like disks)
-├── etc → Configuration files for system and applications
-├── home → User home directories (e.g., /home/sukanthi)
-├── lib → Shared libraries and kernel modules
-├── media → Mount points for external media (USB, CD)
-├── mnt → Temporary mount point for storage
-├── opt → Optional or third-party software
-├── proc → Virtual directory providing process and kernel info
-├── root → Home directory for the root (admin) user
-├── run → Runtime data since last boot (PID files, sockets)
-├── sbin → System binaries (commands for root/admin)
-├── srv → Data for system services (FTP, web, etc.)
-├── sys → Virtual interface to kernel and hardware devices
-├── tmp → Temporary files (cleared on reboot)
-├── usr → User programs, documentation, and libraries
-└── var → Variable data like logs, cache, mail, spool
-
-markdown
-Copy code
+├── bin       → Essential user commands (e.g., ls, cp, mv)
+├── boot      → Files needed to boot the OS (kernel, GRUB)
+├── dev       → Device files (representing hardware like disks)
+├── etc       → Configuration files for system and applications
+├── home      → User home directories (e.g., /home/sukanthi)
+├── lib       → Shared libraries and kernel modules
+├── media     → Mount points for external media (USB, CD)
+├── mnt       → Temporary mount point for storage
+├── opt       → Optional or third-party software
+├── proc      → Virtual directory providing process and kernel info
+├── root      → Home directory for the root (admin) user
+├── run       → Runtime data since last boot (PID files, sockets)
+├── sbin      → System binaries (commands for root/admin)
+├── srv       → Data for system services (FTP, web, etc.)
+├── sys       → Virtual interface to kernel and hardware devices
+├── tmp       → Temporary files (cleared on reboot)
+├── usr       → User programs, documentation, and libraries
+└── var       → Variable data like logs, cache, mail, spool
 
 ---
 
@@ -92,7 +90,20 @@ or simply:
 bash
 Copy code
 ls /
-📘 Conclusion
-The Linux folder structure is more than just organization — it’s the foundation that lets the OS boot, run programs, and manage processes efficiently.
-Understanding it gives you deeper insight into how Linux systems operate — a key skill for any DevOps engineer, system administrator, or developer.
+
+## 📘 Conclusion
+
+The **Linux folder structure** is more than just a way to organize files —  
+it’s the foundation that enables the operating system to **boot, run programs, and manage resources efficiently**.
+
+Understanding this structure helps you:
+
+- 🧩 Identify where system configurations and logs reside.  
+- 🔧 Troubleshoot and automate with confidence.  
+- 💡 Gain deeper insight into how Linux operates under the hood.  
+
+For any **DevOps engineer**, **system administrator**, or **developer**, mastering this hierarchy is essential —  
+because every command you execute in Linux interacts with one of these directories.
+
+> 🐧 *“Know your directories, and you’ll know your system.”*
 
